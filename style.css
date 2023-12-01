@@ -1,0 +1,101 @@
+:root{
+    --body-color: #F8DF3C;
+    --lightest-color: #ffffff;
+    --darkest-color: #000000;
+    --cheeks-color: #E94E38;
+}
+
+body{
+    margin: 0 auto;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+}
+
+.creature{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+}
+
+.creature-eyes-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creature-eye{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--darkest-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.creature-eye-white{
+    margin: 12px 0 0 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--lightest-color);
+}
+
+.creature-eye-white-small{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--lightest-color);
+    margin-left: 8px;
+}
+
+.creature-nose{
+    width: 22px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--darkest-color);
+    margin-bottom: 20px;
+}
+
+.creature-cheeks-and-mouth-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creature-cheek{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--cheeks-color);
+    border-color: var(--darkest-color);
+    margin-top: -20px;
+}
+
+.creature-mouth-container{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: auto;
+}
+.creature-mouth{
+    width: 75px;
+    border: 4px solid;
+    border-color: transparent transparent var(--darkest-color) transparent; 
+}
+
+.creature-mouth-left{
+    transform: rotate(-25deg);
+    border-radius: 0 0 50% 40% / 0 0 100% 100%;
+    margin-right: -13px;
+}
+
+.creature-mouth-right{
+    transform: rotate(25deg);
+    border-radius: 0 0 40% 50% / 0 0 100% 100%;
+    margin-left: -13px;
+}
